@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+/* || FONTS */
+
+@font-face {
+  font-family: "Items";
+  src: url("/fonts/Items-NormalLight.woff2.download/Items-NormalLight.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Items Text";
+  src: url("/fonts/ItemsText-Book.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Items Text";
+  src: url("/fonts/ItemsText-BookItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Items Text Monospaced";
+  src: url("/fonts/ItemsText-Monospaced.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT America";
+  src: url("/fonts/GT-America-Standard-Regular.woff2.download/GT-America-Standard-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* || APP */
+
+:root {
+  /* Typography */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "GT America", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  /* Selection */
+  ::selection {
+    background-color: rgb(var(--color-dark-blue));
+    color: rgb(var(--color-white));
+  }
+}
+
+/* || GENERAL */
+
+/* || Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Items", serif;
+  line-height: 1.25;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+p,
+ol,
+ul {
+  font-family: "GT America", sans-serif;
+  line-height: 1.25;
+}
